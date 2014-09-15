@@ -1,11 +1,13 @@
 require 'oj'
 require 'rest-client'
 
+require 'ecwid/api/profile'
 require 'ecwid/api/order'
 require 'ecwid/api/product'
 
 module Ecwid
   class Client
+    include Ecwid::API::Profile
     include Ecwid::API::Order
     include Ecwid::API::Product
 
