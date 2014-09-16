@@ -16,19 +16,11 @@ Or install it yourself as:
 
 ## Usage
 
-Configure:
-
-```ruby
-Ecwid.configure do |conf|
-  conf.id = 'id'
-  conf.secret = 'secret'
-end
-```
-
 Create a client, and use it to call the Ecwid API:
 
 ```ruby
 client = Ecwid::Client.new('store_id', 'token')
+orders = client.get_orders
 ```
 
 ## Contributing
