@@ -18,6 +18,14 @@ module Ecwid
       }
     end
 
+    def store_id
+      @configuration[:store_id]
+    end
+
+    def token
+      @configuration[:token]
+    end
+
     def get(path, options = {}, headers = {})
       request(:get, path, options, headers)
     end
@@ -49,17 +57,12 @@ module Ecwid
                    when :delete then
                      client.delete
                    end
-        if((200..201) === response.code)
-          Oj.load response
-        elsif response.code == 204
-          nil
-        end
+        
+        Oj.load response if((200..201) === response.code)
       rescue RestClient::NotModified
         nil
       rescue RestClient::Forbidden => e
-        raise Ecwid::HTTPUnauthorized.new 'Invalid Ecwid credentials'
-      rescue => e
-        raise "Failed to parse Ecwid response: #{e}"
+        raise Ecwid::HTTPUnauthorized.new 'Invalid Ecwid credentials'      
       end
     end
   end

@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://app.ecwid.com/api/v3/<STORE_ID>/profile?token=<TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 16 Sep 2014 11:19:19 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Etag:
+      - W/"-2093100213"
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAI2UbXPaRhSF/4pGH/oy49qAwUn8qZIAIcPKChI4cSeTkaXF
+        qAaJSiKxk/F/7z4rg3HrTJuZHIu9955z9u7d/W7eylyW8crLF4V5/t2s6qKU
+        Xmqe93rds3b77KhZmZUr89xc1vXm/ORErzzFj2XyNUuPk2J9YpIbl7Usw6yW
+        kOlYuL1Ji3Wc5YrgsFKlN9q1TP8X/ePjkRknSbHNa8ifPv14rbRMEd8b6r+5
+        T/Gz5O5lrP0cHCg/KK7j+2z9+0NRbwo0TKVQybrO8tsKiWRVVFL1YhGvKvnU
+        iZecP1eGXqVSEWzi/EFv/Af8JCn58sEpUlimMwoXRbmO68rK01me1Y3ytixl
+        njzoHJu6p4WglIvsXi0frIXbRbO2OT5YdctiuwnlJlYdLkoVNQ6CfZlk63h1
+        GD6sjcptnqiDuZZlMSzjpM6KPF7tG7FLm8acc+u41TnrvumddXpn7U633T1l
+        bL7K7HZZsyHFPfYml+7UEuZu/VVzTegH1prgfxirs7Uc6m4yTsvz9dqIVW2q
+        KvbLQggjPTIe1D+zqfhW5ByGVWXxyeW6uuNMVnF+u41vpT4Nmcc3K5lOntf+
+        UGuq+kYCt3QOnaQCHrQiQFSugErD5277HR81sFWwyAByF6WCLAXIzUj5k8AS
+        kiXRJRV3hYIV0dUXBes7gGiOTk50w9em1vDZnqq/Jcsl5RX5FQkVRRUc1V/0
+        YQmwtiXlC8a+Lc1P2EvkTVHcMXlSnXs6KZJ4RcNk/nkW0qw6vtdNUdn0ks/v
+        bObc5M7lzY1hFGRqhLU6jOrlTdANVVRH5owRmXvmp8ejJ4bOAUNo/GQ4cR7r
+        7v6z3rGof53k9JlksC2LjTR+Gcx+fYXEitSiPQBcBSO653wErhX0xwoGRIce
+        QLTPT5ev0UyBx08Plskc0F8EBF/+REGggZ/TSwUhpCF8A8yHms8+7EDrTav3
+        rtU+bf/W7rZbZ2/b3U6v1zpozHRbqdnNjaFMeU/VnXhla+qteebsnvbennZa
+        bzs/ovRy9Y7ncXO/jF8ut3WVpdL4t9KrXeyrRYuNWEOAVlrs0GLr+hmwfID9
+        W+8BGmixf30CFh2zroAPAM23OV+bt9Du7w9puDspewSgYV8ACNkI2QjZCOmr
+        YKNh61PmfGw0bA7YRkPPkOMAaDjQO9A70DvQOxyXA70DvQO9A72jZwXjDszO
+        h5ejg93+xW6I+tT2KesTHTi7wRqgNkBtMN2NxCDaTxwEQwiGEAwvd1PoWs3U
+        KMC4q4cI9y58LnwuBC7GXWpdjLsB8H43wS5qLmou+3BpjssWRkiOKBv5u2sx
+        ivYz398PPvQeeR55Hv486D0qvHB3Ny5IviDvgpQLbIxZG2N3jN0xdsekjKEa
+        6xRYxrga42pM6ybsfMLOJzRxQtkEuxOSJ0g+X8LmTlIrKBNUCNwLxAUNEzgQ
+        OBCwCHYksCGwIbAr8CLYlkBDoKGvt9AXHQ2BScEICK2GUx9JH0kfNR81HzUf
+        z/pp8KH3ofdh9uHzqb3EQQBBQG1AbUBtgNMAp82zovNwGkAQYE0/NQGGAry8
+        h2UKi35+pqRMiYYEQjoZYjKkL/o1ChEKEdLPVMgQNq8WkiGSIZKhfs7QDZEM
+        aUSIZMgWIkgjSCPcR5BGkEbwRfBF8EXwRfBF8EXwRfBF8EU4jeCb6fceFv3e
+        Ny8/ajOic6JzJOdsYU7eHPdzmOc09gobV5R9JOUjGteUXcN3faWey0+PfwNW
+        cpLwIQsAAA==
+    http_version: 
+  recorded_at: Tue, 16 Sep 2014 11:19:19 GMT
+recorded_with: VCR 2.9.3
