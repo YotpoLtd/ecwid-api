@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    ecwid-api (0.0.1)
+    ecwid-api (0.0.2)
       oj (~> 2.0)
       rest_client
 
