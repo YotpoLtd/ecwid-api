@@ -43,17 +43,13 @@ module Ecwid
     end
 
     def request(method, path, options, headers = {})
-      url = "https://app.ecwid.com/api/v3/#{@configuration[:store_id]}#{path}"
-      url = "#{url}?token=#{@configuration[:token]}" if method == :get
-
-      client = RestClient::Resource.new(url, ssl_version: 'SSLv23')
-
-      options.merge!(token: @configuration[:token]) unless method == :get
+      client = RestClient::Resource.new("https://app.ecwid.com/api/v3/#{@configuration[:store_id]}#{path}")
+      options.merge!(token: @configuration[:token])
       
       begin
         response = case method
                    when :get then
-                     client.get(headers.merge({ content_type: :json }))
+                     client.get(headers.merge({ params: options, content_type: :json }))
                    when :post then
                      client.post(options, headers.merge({ content_type: :json }))
                    when :put then

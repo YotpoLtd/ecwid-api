@@ -1,9 +1,9 @@
 PATH
   remote: .
   specs:
-    ecwid-api (0.0.3)
+    ecwid-api (0.0.4)
       oj (~> 2.0)
-      rest_client
+      rest-client
 
 GEM
   remote: https://rubygems.org/
@@ -12,11 +12,11 @@ GEM
     crack (0.4.2)
       safe_yaml (~> 1.0.0)
     diff-lcs (1.2.5)
-    netrc (0.7.7)
+    mime-types (2.0)
     oj (2.10.2)
     rake (10.3.2)
-    rest_client (1.7.3)
-      netrc (~> 0.7.7)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
     rspec (3.1.0)
       rspec-core (~> 3.1.0)
       rspec-expectations (~> 3.1.0)
